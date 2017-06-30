@@ -19,6 +19,7 @@ def plot_image_labels_prediction(images,labels,prediction,idx,num=10):
         ax.set_xticks([]);ax.set_yticks([])
         idx+=1
     plt.show()
+<<<<<<< HEAD
 plot_image_labels_prediction(x_image_train,y_label_train,[],0)
 x_image_train_normal=x_image_train.astype('float32')/255.0
 x_image_test_normal=x_image_test.astype('float32')/255.0
@@ -63,3 +64,6 @@ train_history=model.fit(x=x_image_train_normal,y=y_label_train_OneHot,validation
 scores=model.evaluate(x_image_test_normal,y_label_test_OneHot,verbose=0)
 print()
 print(scores[1])
+=======
+plot_image_labels_prediction(x_image_train,y_label_train,[],0)
+>>>>>>> 176b81030fd03c10db48eb8807162131ea75c091
